@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "KgXnggrAXB7skYEQMHm4oPs3NGrOIcgTrTeC/NjT1Uk=",
+  "Source": "PetsShop",
+  "BasePath": "_content/PetsShop",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PetsShop\\wwwroot",
+      "Source": "PetsShop",
+      "ContentRoot": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\",
+      "BasePath": "_content/PetsShop",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.html",
+      "SourceId": "PetsShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\",
+      "BasePath": "_content/PetsShop",
+      "RelativePath": "Home#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "32htcwsdaj",
+      "Integrity": "mwdyYGOkcnNL+nS38ZzDz+edk8wGi5I8+nb6OwVlrwU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Home.html"
+    },
+    {
+      "Identity": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.js",
+      "SourceId": "PetsShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\",
+      "BasePath": "_content/PetsShop",
+      "RelativePath": "Home#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sifq5zu8r2",
+      "Integrity": "7L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Home.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Home.32htcwsdaj.html",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mwdyYGOkcnNL+nS38ZzDz+edk8wGi5I8+nb6OwVlrwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 20:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "32htcwsdaj"
+        },
+        {
+          "Name": "label",
+          "Value": "Home.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mwdyYGOkcnNL+nS38ZzDz+edk8wGi5I8+nb6OwVlrwU="
+        }
+      ]
+    },
+    {
+      "Route": "Home.html",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mwdyYGOkcnNL+nS38ZzDz+edk8wGi5I8+nb6OwVlrwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 20:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mwdyYGOkcnNL+nS38ZzDz+edk8wGi5I8+nb6OwVlrwU="
+        }
+      ]
+    },
+    {
+      "Route": "Home.js",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:04:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so="
+        }
+      ]
+    },
+    {
+      "Route": "Home.sifq5zu8r2.js",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:04:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sifq5zu8r2"
+        },
+        {
+          "Name": "label",
+          "Value": "Home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so="
+        }
+      ]
+    }
+  ]
+}

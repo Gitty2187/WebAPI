@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/PetsShop/Home.32htcwsdaj.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Home.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"32htcwsdaj"},{"Name":"integrity","Value":"sha256-mwdyYGOkcnNL\u002BnS38ZzDz\u002Bedk8wGi5I8\u002Bnb6OwVlrwU="},{"Name":"label","Value":"_content/PetsShop/Home.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2775"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022mwdyYGOkcnNL\u002BnS38ZzDz\u002Bedk8wGi5I8\u002Bnb6OwVlrwU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 20:20:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PetsShop/Home.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Home.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mwdyYGOkcnNL\u002BnS38ZzDz\u002Bedk8wGi5I8\u002Bnb6OwVlrwU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2775"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022mwdyYGOkcnNL\u002BnS38ZzDz\u002Bedk8wGi5I8\u002Bnb6OwVlrwU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 20:20:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PetsShop/Home.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Home.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 21:04:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PetsShop/Home.sifq5zu8r2.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Home.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sifq5zu8r2"},{"Name":"integrity","Value":"sha256-7L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so="},{"Name":"label","Value":"_content/PetsShop/Home.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227L3fh3uJ6nbnryrpj4HbxgXPJ3DgRhvCVzuurq353so=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 21:04:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
