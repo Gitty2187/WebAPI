@@ -23,20 +23,41 @@ async function login() {
             headers: {
                 'Content-Type': 'application/json' // תיקון השם לכותרת
             },
-            body: JSON.stringify([userName, password]) 
+            body: JSON.stringify([userName, password])
         });
 
-        if (!res.ok) {
-            throw new Error(res);
-        }
 
-        const data = await res.json();
-        alert(JSON.stringify(res));
+        if (res.ok) {
+            const data = await res.json();
+            localStorage.setItem("UserId", data.id);
+            localStorage.setItem("UserName", data.firstName);
+            localStorage.setItem("UserLastName", data.lastName)
+            window.location.href = "hello.html";
+        }
+        else {
+            switch (responsePost.status) {
+                case 400:
+                    const badRequestData = await responsePost.json();
+                    alert(`Bad request: ${badRequestData.message || 'Invalid input. Please check your data.'}`);
+                    break;
+                case 401:
+                    alert("Unauthorized: Please check your credentials.");
+                    break;
+                case 500:
+                    alert("Server error. Please try again later.");
+                    break;
+                default:
+                    alert(`Unexpected error: ${responsePost.status}`);
+            }
+        }
     }
     catch (e) {
-        alert(e.message);
+        alert("Error: " + e.message);
+        alert("Error: " + e.message);
     }
 }
+
+
 
 async function get() {
     try {
@@ -52,8 +73,8 @@ async function get() {
 }
 
 async function logup() {
-    const userName = document.getElementById("loginUserName").value;
-    const password = document.getElementById("loginPassword").value;
+    const userName = document.getElementById("registerUserName").value;
+    const password = document.getElementById("registerPassword").value;
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
     const user = { userName, password, firstName, lastName };
@@ -68,13 +89,13 @@ async function logup() {
         if (!res.ok) {
             throw new Error('Network response was not ok');
         }
-
-        const data = await res.json();
-        alert('User added:', data);
+        alert("משתמש נוסף בהצלחה")
     } catch (error) {
         alert('There was a problem with the fetch operation:', error.message);
     }
 }
+
+
 
 
 

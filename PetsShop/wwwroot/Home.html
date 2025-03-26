@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="he">
 <head>
     <meta charset="utf-8" />
-    <title>Login and Signup</title>
+    <title>כניסה ורישום</title>
     <script src="Home.js"></script>
     <style>
         body {
@@ -12,6 +12,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
+            direction: rtl; /* תוספת למעבר בין שפות */
         }
 
         .form-container {
@@ -60,35 +61,33 @@
 </head>
 <body>
     <div class="form-container" id="login">
-        <label for="loginUserName">User Name</label>
+        <label for="loginUserName">שם משתמש</label>
         <input type="text" id="loginUserName" />
 
-        <label for="loginPassword">Password</label>
+        <label for="loginPassword">סיסמא</label>
         <input type="password" id="loginPassword" />
 
-        <button onclick="login()">Log in</button>
-        <button class="toggle-button" onclick="get()">get</button>
-        <button class="toggle-button" onclick="show()">New user? Sign up</button>
+        <button onclick="login()">כניסה</button>
+        <button class="toggle-button" onclick="show()">משתמש חדש? רישום</button>
     </div>
 
     <div class="form-container" style="display: none;" id="register">
-        <label for="registerUserName">User Name</label>
+        <label for="registerUserName">שם משתמש</label>
         <input type="text" id="registerUserName" />
 
-        <label for="registerPassword">Password</label>
+        <label for="registerPassword">סיסמא</label>
         <input type="password" id="registerPassword" />
 
-        <label for="firstName">First Name</label>
+        <label for="firstName">שם פרטי</label>
         <input type="text" id="firstName" />
 
-        <label for="lastName">Last Name</label>
+        <label for="lastName">שם משפחה</label>
         <input type="text" id="lastName" />
 
-        <button onclick="logup()">Sign up</button>
+        <button onclick="logup()">רישום</button>
 
-        <button class="toggle-button" onclick="show()">Already have an account? Log in</button>
+        <button class="toggle-button" onclick="show()">כבר יש לך חשבון? כניסה</button>
     </div>
-    
 
 </body>
 </html>

@@ -1,0 +1,16 @@
+M:\API\Repositories\bin\Debug\net9.0\Repositories.deps.json
+M:\API\Repositories\bin\Debug\net9.0\Repositories.dll
+M:\API\Repositories\bin\Debug\net9.0\Repositories.pdb
+M:\API\Repositories\bin\Debug\net9.0\Entities.dll
+M:\API\Repositories\bin\Debug\net9.0\Entities.pdb
+M:\API\Repositories\obj\Debug\net9.0\Repositories.csproj.AssemblyReference.cache
+M:\API\Repositories\obj\Debug\net9.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+M:\API\Repositories\obj\Debug\net9.0\Repositories.AssemblyInfoInputs.cache
+M:\API\Repositories\obj\Debug\net9.0\Repositories.AssemblyInfo.cs
+M:\API\Repositories\obj\Debug\net9.0\Repositories.csproj.CoreCompileInputs.cache
+M:\API\Repositories\obj\Debug\net9.0\Repositories.sourcelink.json
+M:\API\Repositories\obj\Debug\net9.0\Reposito.787EC4B2.Up2Date
+M:\API\Repositories\obj\Debug\net9.0\Repositories.dll
+M:\API\Repositories\obj\Debug\net9.0\refint\Repositories.dll
+M:\API\Repositories\obj\Debug\net9.0\Repositories.pdb
+M:\API\Repositories\obj\Debug\net9.0\ref\Repositories.dll

@@ -1,12 +1,20 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.html",
+      "Id": "M:\\API\\PetsShop\\wwwroot\\Hello.js",
+      "PackagePath": "staticwebassets\\Hello.js"
+    },
+    {
+      "Id": "M:\\API\\PetsShop\\wwwroot\\Home.html",
       "PackagePath": "staticwebassets\\Home.html"
     },
     {
-      "Id": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\PetsShop\\wwwroot\\Home.js",
+      "Id": "M:\\API\\PetsShop\\wwwroot\\Home.js",
       "PackagePath": "staticwebassets\\Home.js"
+    },
+    {
+      "Id": "M:\\API\\PetsShop\\wwwroot\\hello.html",
+      "PackagePath": "staticwebassets\\hello.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PetsShop.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

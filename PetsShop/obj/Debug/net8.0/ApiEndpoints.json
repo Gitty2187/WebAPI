@@ -166,17 +166,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PetsShop.Controllers.UsersController",
@@ -243,7 +233,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "PetsShop.User",
         "MediaTypes": [
           "text/plain",
           "application/json",

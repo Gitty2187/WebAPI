@@ -1,2 +1,4 @@
+wwwroot\hello.html
+wwwroot\Hello.js
 wwwroot\Home.html
 wwwroot\Home.js
