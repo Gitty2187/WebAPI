@@ -59,6 +59,9 @@ namespace PetsShop.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] User user)
         {
+            int resPass = userService.checkPassword(user.password);
+            if (resPass < 2)
+                return BadRequest("You must enter a stronger password");
             User res = userService.register(user.userName, user.password, user.firstName, user.lastName);
             if (res == null)
                 return NotFound();
@@ -70,18 +73,33 @@ namespace PetsShop.Controllers
         [HttpPost("chekPassword")]
         public IActionResult Post([FromBody] string password)
         {
-            string res = userService.checkPassword(password);
-            if (res == null)
-                return NotFound();
-            else
-                return Ok(res);
+            int res = userService.checkPassword(password);
+
+            string s = res switch
+            {
+                0 => "חלשה מאוד",
+                1 => "חלשה",
+                2 => "בינונית",
+                3 => "חזקה",
+                4 => "חזקה מאוד",
+                _ => "לא ידוע"
+            };
+
+            return Ok(s);
+
         }
 
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] User user)
         {
-          User newUser = new(user.userName, user.password, user.firstName, user.lastName, id);
+            if (user.password != null)
+            {
+                int resPass = userService.checkPassword(user.password);
+                if (resPass < 2)
+                    return BadRequest("You must enter a stronger password");
+            }
+            User newUser = new(user.userName, user.password, user.firstName, user.lastName, id);
             try
             {
                 userService.update(newUser);

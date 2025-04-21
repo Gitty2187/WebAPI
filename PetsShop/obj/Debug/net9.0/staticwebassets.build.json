@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "56ebv2Yl4LG48i6pA3x083cXR5AX3uOykQMghCcUBv0=",
+  "Hash": "acM3aCksxoXp/mYvJTwHxE2ITJGitRY9g+ZTdW9oC1M=",
   "Source": "PetsShop",
   "BasePath": "_content/PetsShop",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\hello.html"
     },
     {
-      "Identity": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-zi3tbjbs5w.gz",
+      "Identity": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-u24b37krnf.gz",
       "SourceId": "PetsShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/PetsShop",
-      "RelativePath": "Home#[.{fingerprint=zi3tbjbs5w}]?.js.gz",
+      "RelativePath": "Home#[.{fingerprint=u24b37krnf}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,19 +52,19 @@
       "RelatedAsset": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\Home.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "guegdegqyu",
-      "Integrity": "KFTLE/DUjSEEqq0K90C/ZYS4JrX4S2CHFgp6w2zLTKg=",
+      "Fingerprint": "mbe1ibzmrx",
+      "Integrity": "wgxr2FLNR7AwZx7PZ2YOM4DXNxi9QOQmz9nwneu7dkE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\Home.js"
     },
     {
-      "Identity": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-ob9vrtsh5k.gz",
+      "Identity": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-6wkmufys6f.gz",
       "SourceId": "PetsShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/PetsShop",
-      "RelativePath": "Hello#[.{fingerprint=ob9vrtsh5k}]?.js.gz",
+      "RelativePath": "Hello#[.{fingerprint=6wkmufys6f}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -73,8 +73,8 @@
       "RelatedAsset": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\Hello.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "37a811lsu2",
-      "Integrity": "YYXECq8p9Lq56AII6ojl9gDRaBShsjrNoFhY4hFSM4o=",
+      "Fingerprint": "0qdz7vpois",
+      "Integrity": "yPzYI/qpvinlbLQhlJDQC74OBuARt829ibY0H3jBtME=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\Hello.js"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ob9vrtsh5k",
-      "Integrity": "9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E=",
+      "Fingerprint": "6wkmufys6f",
+      "Integrity": "Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Hello.js"
@@ -178,14 +178,175 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zi3tbjbs5w",
-      "Integrity": "G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI=",
+      "Fingerprint": "u24b37krnf",
+      "Integrity": "ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Home.js"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "Hello.6wkmufys6f.js",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-6wkmufys6f.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001366120219"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "731"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPzYI/qpvinlbLQhlJDQC74OBuARt829ibY0H3jBtME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6wkmufys6f"
+        },
+        {
+          "Name": "label",
+          "Value": "Hello.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U="
+        }
+      ]
+    },
+    {
+      "Route": "Hello.6wkmufys6f.js",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\Hello.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2274"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6wkmufys6f"
+        },
+        {
+          "Name": "label",
+          "Value": "Hello.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U="
+        }
+      ]
+    },
+    {
+      "Route": "Hello.6wkmufys6f.js.gz",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-6wkmufys6f.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPzYI/qpvinlbLQhlJDQC74OBuARt829ibY0H3jBtME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6wkmufys6f"
+        },
+        {
+          "Name": "label",
+          "Value": "Hello.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPzYI/qpvinlbLQhlJDQC74OBuARt829ibY0H3jBtME="
+        }
+      ]
+    },
     {
       "Route": "hello.html",
       "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\0nbre8l3dv-ilpy7pl3p3.gz",
@@ -486,12 +647,12 @@
     },
     {
       "Route": "Hello.js",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-ob9vrtsh5k.gz",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-6wkmufys6f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001639344262"
+          "Quality": "0.001366120219"
         }
       ],
       "ResponseHeaders": [
@@ -501,15 +662,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "609"
+          "Value": "731"
         },
         {
           "Name": "ETag",
-          "Value": "\"YYXECq8p9Lq56AII6ojl9gDRaBShsjrNoFhY4hFSM4o=\""
+          "Value": "\"yPzYI/qpvinlbLQhlJDQC74OBuARt829ibY0H3jBtME=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:39:12 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -529,13 +690,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E=\""
+          "Value": "W/\"Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E="
+          "Value": "sha256-Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U="
         }
       ]
     },
@@ -550,7 +711,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1729"
+          "Value": "2274"
         },
         {
           "Name": "Content-Type",
@@ -558,11 +719,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E=\""
+          "Value": "\"Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:39:12 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -572,13 +733,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E="
+          "Value": "sha256-Rq1h/3lWzYZHNGluFlA6GcaJx4E5Q0iv0dzT6fmAI6U="
         }
       ]
     },
     {
       "Route": "Hello.js.gz",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-ob9vrtsh5k.gz",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-6wkmufys6f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -587,7 +748,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "609"
+          "Value": "731"
         },
         {
           "Name": "Content-Type",
@@ -595,11 +756,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YYXECq8p9Lq56AII6ojl9gDRaBShsjrNoFhY4hFSM4o=\""
+          "Value": "\"yPzYI/qpvinlbLQhlJDQC74OBuARt829ibY0H3jBtME=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:39:12 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -617,168 +778,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YYXECq8p9Lq56AII6ojl9gDRaBShsjrNoFhY4hFSM4o="
-        }
-      ]
-    },
-    {
-      "Route": "Hello.ob9vrtsh5k.js",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-ob9vrtsh5k.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001639344262"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "609"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YYXECq8p9Lq56AII6ojl9gDRaBShsjrNoFhY4hFSM4o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:39:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ob9vrtsh5k"
-        },
-        {
-          "Name": "label",
-          "Value": "Hello.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E="
-        }
-      ]
-    },
-    {
-      "Route": "Hello.ob9vrtsh5k.js",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\Hello.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1729"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:39:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ob9vrtsh5k"
-        },
-        {
-          "Name": "label",
-          "Value": "Hello.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9M87F/mWychB+DqRMhWQVEfEG11fBoMKT1hM22KWE1E="
-        }
-      ]
-    },
-    {
-      "Route": "Hello.ob9vrtsh5k.js.gz",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\aqrg3e6qg2-ob9vrtsh5k.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YYXECq8p9Lq56AII6ojl9gDRaBShsjrNoFhY4hFSM4o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:39:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ob9vrtsh5k"
-        },
-        {
-          "Name": "label",
-          "Value": "Hello.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YYXECq8p9Lq56AII6ojl9gDRaBShsjrNoFhY4hFSM4o="
+          "Value": "sha256-yPzYI/qpvinlbLQhlJDQC74OBuARt829ibY0H3jBtME="
         }
       ]
     },
@@ -1082,12 +1082,12 @@
     },
     {
       "Route": "Home.js",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-zi3tbjbs5w.gz",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-u24b37krnf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000952380952"
+          "Quality": "0.000872600349"
         }
       ],
       "ResponseHeaders": [
@@ -1097,15 +1097,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1049"
+          "Value": "1145"
         },
         {
           "Name": "ETag",
-          "Value": "\"KFTLE/DUjSEEqq0K90C/ZYS4JrX4S2CHFgp6w2zLTKg=\""
+          "Value": "\"wgxr2FLNR7AwZx7PZ2YOM4DXNxi9QOQmz9nwneu7dkE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:18:51 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1125,13 +1125,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI=\""
+          "Value": "W/\"ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI="
+          "Value": "sha256-ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE="
         }
       ]
     },
@@ -1146,7 +1146,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3830"
+          "Value": "4398"
         },
         {
           "Name": "Content-Type",
@@ -1154,11 +1154,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI=\""
+          "Value": "\"ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:18:51 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1168,13 +1168,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI="
+          "Value": "sha256-ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE="
         }
       ]
     },
     {
       "Route": "Home.js.gz",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-zi3tbjbs5w.gz",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-u24b37krnf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1183,7 +1183,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1049"
+          "Value": "1145"
         },
         {
           "Name": "Content-Type",
@@ -1191,11 +1191,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KFTLE/DUjSEEqq0K90C/ZYS4JrX4S2CHFgp6w2zLTKg=\""
+          "Value": "\"wgxr2FLNR7AwZx7PZ2YOM4DXNxi9QOQmz9nwneu7dkE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:18:51 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1213,18 +1213,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KFTLE/DUjSEEqq0K90C/ZYS4JrX4S2CHFgp6w2zLTKg="
+          "Value": "sha256-wgxr2FLNR7AwZx7PZ2YOM4DXNxi9QOQmz9nwneu7dkE="
         }
       ]
     },
     {
-      "Route": "Home.zi3tbjbs5w.js",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-zi3tbjbs5w.gz",
+      "Route": "Home.u24b37krnf.js",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-u24b37krnf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000952380952"
+          "Quality": "0.000872600349"
         }
       ],
       "ResponseHeaders": [
@@ -1234,15 +1234,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1049"
+          "Value": "1145"
         },
         {
           "Name": "ETag",
-          "Value": "\"KFTLE/DUjSEEqq0K90C/ZYS4JrX4S2CHFgp6w2zLTKg=\""
+          "Value": "\"wgxr2FLNR7AwZx7PZ2YOM4DXNxi9QOQmz9nwneu7dkE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:18:51 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1262,13 +1262,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI=\""
+          "Value": "W/\"ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zi3tbjbs5w"
+          "Value": "u24b37krnf"
         },
         {
           "Name": "label",
@@ -1276,12 +1276,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI="
+          "Value": "sha256-ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE="
         }
       ]
     },
     {
-      "Route": "Home.zi3tbjbs5w.js",
+      "Route": "Home.u24b37krnf.js",
       "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\wwwroot\\Home.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1291,7 +1291,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3830"
+          "Value": "4398"
         },
         {
           "Name": "Content-Type",
@@ -1299,11 +1299,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI=\""
+          "Value": "\"ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:18:51 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1313,7 +1313,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zi3tbjbs5w"
+          "Value": "u24b37krnf"
         },
         {
           "Name": "label",
@@ -1321,13 +1321,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-G35CsPKoHsg4ky8HyCk5pCUczw1KV3A0qNSZyecvtMI="
+          "Value": "sha256-ZkhwgRBaMPg7buO8G7mLCBZh5bUkgC+WvAbWg65aSyE="
         }
       ]
     },
     {
-      "Route": "Home.zi3tbjbs5w.js.gz",
-      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-zi3tbjbs5w.gz",
+      "Route": "Home.u24b37krnf.js.gz",
+      "AssetFile": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\Debug\\net9.0\\compressed\\5h7exufk2x-u24b37krnf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1336,7 +1336,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1049"
+          "Value": "1145"
         },
         {
           "Name": "Content-Type",
@@ -1344,11 +1344,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KFTLE/DUjSEEqq0K90C/ZYS4JrX4S2CHFgp6w2zLTKg=\""
+          "Value": "\"wgxr2FLNR7AwZx7PZ2YOM4DXNxi9QOQmz9nwneu7dkE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:18:51 GMT"
+          "Value": "Mon, 21 Apr 2025 19:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1366,7 +1366,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zi3tbjbs5w"
+          "Value": "u24b37krnf"
         },
         {
           "Name": "label",
@@ -1374,7 +1374,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KFTLE/DUjSEEqq0K90C/ZYS4JrX4S2CHFgp6w2zLTKg="
+          "Value": "sha256-wgxr2FLNR7AwZx7PZ2YOM4DXNxi9QOQmz9nwneu7dkE="
         }
       ]
     }

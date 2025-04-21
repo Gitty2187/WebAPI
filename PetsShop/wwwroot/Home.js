@@ -75,6 +75,27 @@ async function logup() {
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
     const user = { userName, password, firstName, lastName };
+
+    try {
+        const res = await fetch(`api/users/chekPassword`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(user.password)
+        });
+
+        const strength = await res.text();
+
+        if (strength === "חלשה מאוד" || strength === "חלשה") {
+            alert("יש להזין סיסמה חזקה יותר");
+            return;
+        }
+
+    } catch {
+        alert("שגיאה בתקשורת עם השרת");
+    }
+
     try {
         const res = await fetch('api/users', {
             method: 'POST',
@@ -84,11 +105,14 @@ async function logup() {
             body: JSON.stringify(user)
         });
         if (!res.ok) {
-            throw new Error('Network response was not ok');
+            const message = await res.text();
+            alert(message);
         }
-        alert("משתמש נוסף בהצלחה")
+        else {
+            alert("משתמש נוסף בהצלחה")
+        }
     } catch (error) {
-        alert('There was a problem with the fetch operation:', error);
+        alert(error.text);
     }
 }
 

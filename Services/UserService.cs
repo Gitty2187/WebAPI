@@ -36,22 +36,15 @@ namespace Services
                 throw ex;
             }
         }
-        public string checkPassword(string password)
+        public int checkPassword(string password)
         {
             if (password != null)
             {
                 var zxcvbnResult = Zxcvbn.Core.EvaluatePassword(password);
-                return zxcvbnResult.Score switch
-                {
-                    0 => "חלשה מאוד",
-                    1 => "חלשה",
-                    2 => "בינונית",
-                    3 => "חזקה",
-                    4 => "חזקה מאוד",
-                    _ => "לא ידוע"
-                };
+                return zxcvbnResult.Score;
+                
             }
-            return null;
+            return -1;
     }
     }
 }
