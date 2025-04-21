@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "zxcvbn-core/7.0.92": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/zxcvbn-core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/zxcvbn-core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -28,6 +41,24 @@
     }
   },
   "libraries": {
+    "zxcvbn-core/7.0.92": {
+      "sha512": "3CKGKJe4SnFrks38EuF4iq1DT6IqsyNu/zMQp9GOpaipb7qdZndjjTXQa1/dkNh/OoxD0/aTcIBrRrbD4ALeGQ==",
+      "type": "package",
+      "path": "zxcvbn-core/7.0.92",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net451/zxcvbn-core.dll",
+        "lib/net451/zxcvbn-core.xml",
+        "lib/netstandard1.3/zxcvbn-core.dll",
+        "lib/netstandard1.3/zxcvbn-core.xml",
+        "lib/netstandard2.0/zxcvbn-core.dll",
+        "lib/netstandard2.0/zxcvbn-core.xml",
+        "zxcvbn-core.7.0.92.nupkg.sha512",
+        "zxcvbn-core.nuspec"
+      ]
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -42,27 +73,28 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Entities >= 1.0.0",
-      "Repositories >= 1.0.0"
+      "Repositories >= 1.0.0",
+      "zxcvbn-core >= 7.0.92"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\215584376\\.nuget\\packages\\": {},
+    "C:\\Users\\משתמש\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\API\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "M:\\API\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
-      "outputPath": "M:\\API\\Services\\obj\\",
+      "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -78,11 +110,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "M:\\API\\Entities\\Entities.csproj": {
-              "projectPath": "M:\\API\\Entities\\Entities.csproj"
+            "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj"
             },
-            "M:\\API\\Repositories\\Repositories.csproj": {
-              "projectPath": "M:\\API\\Repositories\\Repositories.csproj"
+            "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\Repositories.csproj"
             }
           }
         }
@@ -102,6 +134,12 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "zxcvbn-core": {
+            "target": "Package",
+            "version": "[7.0.92, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -118,7 +156,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

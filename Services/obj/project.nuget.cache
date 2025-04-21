@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OPhwju5adhw=",
+  "dgSpecHash": "6iXue2Amcpk=",
   "success": true,
-  "projectFilePath": "M:\\API\\Services\\Services.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\משתמש\\.nuget\\packages\\zxcvbn-core\\7.0.92\\zxcvbn-core.7.0.92.nupkg.sha512"
+  ],
   "logs": []
 }

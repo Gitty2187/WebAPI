@@ -12,8 +12,6 @@ function show() {
     }
 }
 
-
-
 async function login() {
     const userName = document.getElementById("loginUserName").value;
     const password = document.getElementById("loginPassword").value;
@@ -21,7 +19,7 @@ async function login() {
         const res = await fetch('api/users/login', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json' // תיקון השם לכותרת
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify([userName, password])
         });
@@ -30,7 +28,8 @@ async function login() {
         if (res.ok) {
             const data = await res.json();
             localStorage.setItem("UserId", data.id);
-            localStorage.setItem("UserName", data.firstName);
+            localStorage.setItem("UserName", data.userName);
+            localStorage.setItem("UserFirstName", data.firstName);
             localStorage.setItem("UserLastName", data.lastName)
             window.location.href = "hello.html";
         }
@@ -56,8 +55,6 @@ async function login() {
         alert("Error: " + e.message);
     }
 }
-
-
 
 async function get() {
     try {
@@ -91,8 +88,32 @@ async function logup() {
         }
         alert("משתמש נוסף בהצלחה")
     } catch (error) {
-        alert('There was a problem with the fetch operation:', error.message);
+        alert('There was a problem with the fetch operation:', error);
     }
+}
+
+
+async function chekPassword() {
+    const password = document.getElementById("registerPassword").value;
+    try {
+        const res = await fetch(`api/users/chekPassword`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(password)
+        });
+
+        if (res.ok) {
+            const message = await res.text(); 
+            alert(message);
+        } else {
+            alert("הסיסמה לא תקינה או שגיאה בשרת");
+        }
+    } catch {
+        alert("שגיאה בתקשורת עם השרת");
+    }
+
 }
 
 

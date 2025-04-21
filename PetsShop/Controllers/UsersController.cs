@@ -24,7 +24,7 @@ namespace PetsShop.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            using (StreamReader reader = System.IO.File.OpenText("M:\\API\\Users.txt"))
+            using (StreamReader reader = System.IO.File.OpenText("Users.txt"))
             {
                 string? currentUserInFile;
                 while ((currentUserInFile = reader.ReadLine()) != null)
@@ -54,9 +54,8 @@ namespace PetsShop.Controllers
         }
 
 
-
-
         //POST api/<UsersController>
+        //register
         [HttpPost]
         public IActionResult Post([FromBody] User user)
         {
@@ -64,35 +63,36 @@ namespace PetsShop.Controllers
             if (res == null)
                 return NotFound();
             else
-                return Unauthorized("not Success");
+                return Ok(res);
+        }
+
+        //POST api/<UsersController>
+        [HttpPost("chekPassword")]
+        public IActionResult Post([FromBody] string password)
+        {
+            string res = userService.checkPassword(password);
+            if (res == null)
+                return NotFound();
+            else
+                return Ok(res);
         }
 
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Object userToUpdate)
+        public ActionResult Put(int id, [FromBody] User user)
         {
-            string textToReplace = string.Empty;
-            using (StreamReader reader = System.IO.File.OpenText("M:\\API\\Users.txt"))
+          User newUser = new(user.userName, user.password, user.firstName, user.lastName, id);
+            try
             {
-                string currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.ID == id)
-                        textToReplace = currentUserInFile;
-                }
+                userService.update(newUser);
+                return Ok(newUser);
             }
-
-            if (textToReplace != string.Empty)
+            catch
             {
-                string text = System.IO.File.ReadAllText("M:\\API\\Users.txt");
-                text = text.Replace(textToReplace, JsonSerializer.Serialize(userToUpdate));
-                System.IO.File.WriteAllText("M:\\API\\Users.txt", text);
+                return BadRequest();
             }
-
         }
-
+        
         // DELETE api/<UsersController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)

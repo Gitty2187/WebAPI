@@ -1,4 +1,5 @@
-﻿namespace PetsShop
+﻿
+namespace PetsShop
 {
     public class User
     {
@@ -7,7 +8,7 @@
         public string firstName { get; set; }
         public string lastName { get; set; }
         public int ID { get; set; }
-
+        
         public User() { }
         public User(string userName, string password, string firstName, string lastName, int id)
         {
@@ -16,6 +17,11 @@
             this.firstName = firstName;
             this.lastName = lastName;
             ID = id;
+        }
+
+        public static explicit operator User(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

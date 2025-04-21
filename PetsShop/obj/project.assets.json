@@ -89,6 +89,19 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "zxcvbn-core/7.0.92": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/zxcvbn-core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/zxcvbn-core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -117,7 +130,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Entities": "1.0.0",
-          "Repositories": "1.0.0"
+          "Repositories": "1.0.0",
+          "zxcvbn-core": "7.0.92"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}
@@ -477,6 +491,24 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "zxcvbn-core/7.0.92": {
+      "sha512": "3CKGKJe4SnFrks38EuF4iq1DT6IqsyNu/zMQp9GOpaipb7qdZndjjTXQa1/dkNh/OoxD0/aTcIBrRrbD4ALeGQ==",
+      "type": "package",
+      "path": "zxcvbn-core/7.0.92",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net451/zxcvbn-core.dll",
+        "lib/net451/zxcvbn-core.xml",
+        "lib/netstandard1.3/zxcvbn-core.dll",
+        "lib/netstandard1.3/zxcvbn-core.xml",
+        "lib/netstandard2.0/zxcvbn-core.dll",
+        "lib/netstandard2.0/zxcvbn-core.xml",
+        "zxcvbn-core.7.0.92.nupkg.sha512",
+        "zxcvbn-core.nuspec"
+      ]
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -497,27 +529,28 @@
     "net9.0": [
       "Entities >= 1.0.0",
       "Services >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "zxcvbn-core >= 7.0.92"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\215584376\\.nuget\\packages\\": {},
+    "C:\\Users\\משתמש\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\API\\PetsShop\\PetsShop.csproj",
+      "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\PetsShop.csproj",
       "projectName": "PetsShop",
-      "projectPath": "M:\\API\\PetsShop\\PetsShop.csproj",
-      "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
-      "outputPath": "M:\\API\\PetsShop\\obj\\",
+      "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\PetsShop.csproj",
+      "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\PetsShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -533,11 +566,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "M:\\API\\Entities\\Entities.csproj": {
-              "projectPath": "M:\\API\\Entities\\Entities.csproj"
+            "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj"
             },
-            "M:\\API\\Services\\Services.csproj": {
-              "projectPath": "M:\\API\\Services\\Services.csproj"
+            "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj"
             }
           }
         }
@@ -561,6 +594,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
+          },
+          "zxcvbn-core": {
+            "target": "Package",
+            "version": "[7.0.92, )"
           }
         },
         "imports": [
@@ -582,7 +619,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

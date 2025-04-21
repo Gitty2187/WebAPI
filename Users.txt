@@ -1,5 +1,0 @@
-{"userName":"Giity","password":"1","firstName":"Giity","lastName":"f","ID":1}
-{"userName":"Gitty","password":"1","firstName":"Gitty","lastName":"Gitty","ID":2}
-{"userName":"nechama","password":"1","firstName":"nechama","lastName":"nechama_b","ID":3}
-{"userName":"nechama","password":"1","firstName":"nechama","lastName":"nechama_b","ID":4}
-{"userName":"nechama","password":"1","firstName":"nechama","lastName":"nechama_b","ID":5}

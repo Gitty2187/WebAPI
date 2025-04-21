@@ -1,7 +1,7 @@
-M:\API\PetsShop\wwwroot\hello.html
-M:\API\PetsShop\wwwroot\Home.js
-M:\API\PetsShop\wwwroot\Hello.js
-M:\API\PetsShop\wwwroot\Home.html
+C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\hello.html
+C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\Home.js
+C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\Hello.js
+C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\Home.html
 wwwroot\hello.html
 wwwroot\Hello.js
 wwwroot\Home.html
