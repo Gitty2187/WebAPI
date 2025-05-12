@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entities;
+using Microsoft.AspNetCore.Mvc;
 using Services;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,43 +12,34 @@ namespace PetsShop.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        UserService userService = new UserService();
+        private readonly IUserService _userService;
+        public UsersController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+
         // GET: api/<UsersController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public Task<List<User>> Get()
         {
-            return ["value1", "value2"];
+            return _userService.GetUsers();
         }
 
 
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public Task<User> Get(int id)
         {
-            using (StreamReader reader = System.IO.File.OpenText("Users.txt"))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.ID == id)
-                        //RETURN USER TO CLIENT//write in c# code
-                        return Ok(user);
-                }
-            }
-            throw new Exception("User not found");
-
+            return _userService.getById(id);
         }
-
-
-
 
         //POST api/<UsersController>
         [HttpPost("login")]
         public ActionResult Post([FromBody] string[] credentials)
         {
-            User res = userService.login(credentials[0], credentials[1]);
+            Task res = _userService.login(credentials[0], credentials[1]);
             if (res == null)
                 return NotFound();
             else
@@ -59,10 +52,10 @@ namespace PetsShop.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] User user)
         {
-            int resPass = userService.checkPassword(user.password);
+            int resPass = _userService.checkPassword(user.Password);
             if (resPass < 2)
                 return BadRequest("You must enter a stronger password");
-            User res = userService.register(user.userName, user.password, user.firstName, user.lastName);
+            Task res = _userService.register(user);
             if (res == null)
                 return NotFound();
             else
@@ -73,7 +66,7 @@ namespace PetsShop.Controllers
         [HttpPost("chekPassword")]
         public IActionResult Post([FromBody] string password)
         {
-            int res = userService.checkPassword(password);
+            int res = _userService.checkPassword(password);
 
             string s = res switch
             {
@@ -93,17 +86,16 @@ namespace PetsShop.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] User user)
         {
-            if (user.password != null)
+            if (user.Password != null)
             {
-                int resPass = userService.checkPassword(user.password);
+                int resPass = _userService.checkPassword(user.Password);
                 if (resPass < 2)
                     return BadRequest("You must enter a stronger password");
             }
-            User newUser = new(user.userName, user.password, user.firstName, user.lastName, id);
             try
             {
-                userService.update(newUser);
-                return Ok(newUser);
+                _userService.update(user);
+                return Ok(user);
             }
             catch
             {

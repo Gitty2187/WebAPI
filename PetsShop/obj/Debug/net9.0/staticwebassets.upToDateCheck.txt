@@ -1,8 +1,0 @@
-C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\hello.html
-C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\Home.js
-C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\Hello.js
-C:\Users\משתמש\Desktop\WEBAPI\PetsShop\wwwroot\Home.html
-wwwroot\hello.html
-wwwroot\Hello.js
-wwwroot\Home.html
-wwwroot\Home.js

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj": {}
+    "M:\\WebAPI\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj": {
+    "M:\\WebAPI\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj",
+        "projectUniqueName": "M:\\WebAPI\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\obj\\",
+        "projectPath": "M:\\WebAPI\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
+        "outputPath": "M:\\WebAPI\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -66,24 +72,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\Repositories.csproj": {
+    "M:\\WebAPI\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "M:\\WebAPI\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\obj\\",
+        "projectPath": "M:\\WebAPI\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
+        "outputPath": "M:\\WebAPI\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -99,8 +105,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj"
+              "M:\\WebAPI\\Entities\\Entities.csproj": {
+                "projectPath": "M:\\WebAPI\\Entities\\Entities.csproj"
               }
             }
           }
@@ -136,24 +142,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj": {
+    "M:\\WebAPI\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj",
+        "projectUniqueName": "M:\\WebAPI\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Services\\obj\\",
+        "projectPath": "M:\\WebAPI\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
+        "outputPath": "M:\\WebAPI\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -169,11 +175,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Entities\\Entities.csproj"
+              "M:\\WebAPI\\Entities\\Entities.csproj": {
+                "projectPath": "M:\\WebAPI\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\משתמש\\Desktop\\WEBAPI\\Repositories\\Repositories.csproj"
+              "M:\\WebAPI\\Repositories\\Repositories.csproj": {
+                "projectPath": "M:\\WebAPI\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -215,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

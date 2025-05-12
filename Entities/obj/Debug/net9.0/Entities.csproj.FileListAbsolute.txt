@@ -22,3 +22,16 @@ C:\Users\משתמש\Desktop\WEBAPI\Entities\obj\Debug\net9.0\Entities.dll
 C:\Users\משתמש\Desktop\WEBAPI\Entities\obj\Debug\net9.0\refint\Entities.dll
 C:\Users\משתמש\Desktop\WEBAPI\Entities\obj\Debug\net9.0\Entities.pdb
 C:\Users\משתמש\Desktop\WEBAPI\Entities\obj\Debug\net9.0\ref\Entities.dll
+M:\WebAPI\Entities\bin\Debug\net9.0\Entities.deps.json
+M:\WebAPI\Entities\bin\Debug\net9.0\Entities.dll
+M:\WebAPI\Entities\bin\Debug\net9.0\Entities.pdb
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.AssemblyInfoInputs.cache
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.AssemblyInfo.cs
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.csproj.CoreCompileInputs.cache
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.sourcelink.json
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.dll
+M:\WebAPI\Entities\obj\Debug\net9.0\refint\Entities.dll
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.pdb
+M:\WebAPI\Entities\obj\Debug\net9.0\ref\Entities.dll
+M:\WebAPI\Entities\obj\Debug\net9.0\Entities.csproj.AssemblyReference.cache
