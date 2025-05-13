@@ -8,27 +8,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Entities;
 
-public partial class Product
+public partial class Order
 {
     [Key]
     [Column("ID")]
     public int Id { get; set; }
 
-    [StringLength(50)]
-    public string Name { get; set; }
+    [Column(TypeName = "date")]
+    public DateTime? Date { get; set; }
 
-    public int? Price { get; set; }
+    public int? Sum { get; set; }
 
-    [Column("Category_ID")]
-    public int? CategoryId { get; set; }
+    [Column("User_ID")]
+    public int? UserId { get; set; }
 
-    [StringLength(50)]
-    public string Description { get; set; }
-
-    [ForeignKey("CategoryId")]
-    [InverseProperty("Products")]
-    public virtual Category Category { get; set; }
-
-    [InverseProperty("Product")]
+    [InverseProperty("Order")]
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+
+    [ForeignKey("UserId")]
+    [InverseProperty("Orders")]
+    public virtual User User { get; set; }
 }

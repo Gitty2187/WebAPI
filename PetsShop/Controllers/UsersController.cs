@@ -21,49 +21,57 @@ namespace PetsShop.Controllers
 
         // GET: api/<UsersController>
         [HttpGet]
-        public Task<List<User>> Get()
+        public async Task<List<User>> Get()
         {
-            return _userService.GetUsers();
+            return await _userService.GetUsers();
         }
 
 
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public Task<User> Get(int id)
+        public async Task<ActionResult<User>> Get(int id)
         {
-            return _userService.getById(id);
+            return await _userService.getById(id);
         }
 
         //POST api/<UsersController>
         [HttpPost("login")]
-        public ActionResult Post([FromBody] string[] credentials)
+        public async Task<ActionResult<User>> Post([FromBody] string[] credentials)
         {
-            Task res = _userService.login(credentials[0], credentials[1]);
-            if (res == null)
-                return NotFound();
-            else
+            try
+            {
+                var res = await _userService.login((String)credentials[0], (String)credentials[1]);
                 return Ok(res);
+            }
+            catch
+            {
+                return NotFound();
+            }
         }
 
 
         //POST api/<UsersController>
         //register
         [HttpPost]
-        public IActionResult Post([FromBody] User user)
+        public async Task<ActionResult<User>> Post([FromBody] User user)
         {
             int resPass = _userService.checkPassword(user.Password);
             if (resPass < 2)
                 return BadRequest("You must enter a stronger password");
-            Task res = _userService.register(user);
-            if (res == null)
-                return NotFound();
-            else
-                return Ok(res);
+            try
+            {
+                await _userService.register(user);
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         //POST api/<UsersController>
-        [HttpPost("chekPassword")]
+        [HttpPost("checkPassword")]
         public IActionResult Post([FromBody] string password)
         {
             int res = _userService.checkPassword(password);
@@ -84,7 +92,7 @@ namespace PetsShop.Controllers
 
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] User user)
+        public async Task<ActionResult<User>> Put([FromBody] User user)
         {
             if (user.Password != null)
             {

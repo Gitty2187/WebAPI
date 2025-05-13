@@ -15,23 +15,31 @@ public partial class PetsShop_DBContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<Order> Orders { get; set; }
+
+    public virtual DbSet<OrderItem> OrderItems { get; set; }
+
     public virtual DbSet<Product> Products { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Category>(entity =>
+        modelBuilder.Entity<Order>(entity =>
         {
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
-            entity.Property(e => e.Name).IsFixedLength();
+            entity.HasOne(d => d.User).WithMany(p => p.Orders).HasConstraintName("FK_UserID");
+        });
+
+        modelBuilder.Entity<OrderItem>(entity =>
+        {
+            entity.HasOne(d => d.Order).WithMany(p => p.OrderItems).HasConstraintName("FK_OrderID");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.OrderItems).HasConstraintName("FK_Product_ID");
         });
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.Property(e => e.Description).IsFixedLength();
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
-            entity.Property(e => e.Name).IsFixedLength();
+            entity.HasOne(d => d.Category).WithMany(p => p.Products).HasConstraintName("FK_CategoryID");
         });
 
         OnModelCreatingPartial(modelBuilder);

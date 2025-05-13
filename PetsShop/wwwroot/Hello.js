@@ -17,36 +17,17 @@ window.onload = function () {
     
 }
 
+
 async function update() {
-    const userName = document.getElementById("userName1").value;
-    const password = document.getElementById("password").value;
-    const firstName = document.getElementById("firstName").value;
-    const lastName = document.getElementById("lastName").value;
-    const user = { userName, password, firstName, lastName };
-    const id = localStorage.UserId;
-
+    const ID = localStorage.UserId;
+    const UserName = document.getElementById("userName1").value;
+    const Password = document.getElementById("password").value;
+    const FirstName = document.getElementById("firstName").value;
+    const LastName = document.getElementById("lastName").value;
+    const user = { UserName, Password, FirstName, LastName, ID };
+    
     try {
-        const res = await fetch(`api/users/chekPassword`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(user.password)
-        });
-
-        const strength = await res.text(); // שליפת הטקסט מתוך התגובה
-
-        if (strength === "חלשה מאוד" || strength === "חלשה") {
-            alert("יש להזין סיסמה חזקה יותר");
-            return;
-        }
-       
-    } catch {
-        alert("שגיאה בתקשורת עם השרת");
-    }
-
-    try {
-        const res = await fetch(`api/users/${id}`, {
+        const res = await fetch(`api/users/${ID}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -59,9 +40,9 @@ async function update() {
         }
         else {
 
-            localStorage.setItem("UserName", userName);
-            localStorage.setItem("UserLastName", lastName)
-            localStorage.setItem("UserFirstName", firstName)
+            localStorage.setItem("UserName", UserName);
+            localStorage.setItem("UserLastName", LastName)
+            localStorage.setItem("UserFirstName", FirstName)
             alert("משתמש עודכן בהצלחה")
         }
     } catch (error) {

@@ -27,4 +27,6 @@ public partial class User
     [StringLength(50)]
     public string FirstName { get; set; }
 
+    [InverseProperty("User")]
+    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

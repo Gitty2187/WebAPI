@@ -70,33 +70,14 @@ async function get() {
 }
 
 async function logup() {
-    const userName = document.getElementById("registerUserName").value;
-    const password = document.getElementById("registerPassword").value;
-    const firstName = document.getElementById("firstName").value;
-    const lastName = document.getElementById("lastName").value;
-    const user = { userName, password, firstName, lastName };
+    const UserName = document.getElementById("registerUserName").value;
+    const Password = document.getElementById("registerPassword").value;
+    const FirstName = document.getElementById("firstName").value;
+    const LastName = document.getElementById("lastName").value;
+    const user = { UserName, Password, FirstName, LastName };
 
-    try {
-        const res = await fetch(`api/users/chekPassword`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(user.password)
-        });
-
-        const strength = await res.text();
-
-        if (strength === "חלשה מאוד" || strength === "חלשה") {
-            alert("יש להזין סיסמה חזקה יותר");
-            return;
-        }
-
-    } catch {
-        alert("שגיאה בתקשורת עם השרת");
-    }
-
-    try {
+    try
+    {
         const res = await fetch('api/users', {
             method: 'POST',
             headers: {
@@ -111,7 +92,8 @@ async function logup() {
         else {
             alert("משתמש נוסף בהצלחה")
         }
-    } catch (error) {
+    }
+    catch (error) {
         alert(error.text);
     }
 }
@@ -120,7 +102,7 @@ async function logup() {
 async function chekPassword() {
     const password = document.getElementById("registerPassword").value;
     try {
-        const res = await fetch(`api/users/chekPassword`, {
+        const res = await fetch(`api/users/checkPassword`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

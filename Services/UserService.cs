@@ -2,9 +2,7 @@
 using Entities;
 using Repositories;
 using System.Xml.Linq;
-//using zxcvbn;
-//using Zxcvbn;
-//using Zxcvbn.Core;
+
 
 namespace Services
 {
@@ -18,11 +16,11 @@ namespace Services
             _userRepository = userRepository;
         }
 
-        public async Task<User> login(String userName, String password)
+        public async Task<User> login(string UserName, string password)
         {
-            if (userName == null || password == null)
+            if (UserName == null || password == null)
                 return null;
-            return await _userRepository.login(userName, password);
+            return await _userRepository.login(UserName, password);
         }
 
         public async Task register(User user)
@@ -39,6 +37,7 @@ namespace Services
             if (user.UserName == null || user.Password == null)
                 throw new Exception("Must insert userName & password");
             await _userRepository.update(user);
+            return;
         }
 
         public int checkPassword(string password)

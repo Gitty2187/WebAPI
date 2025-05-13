@@ -1,6 +1,6 @@
 ﻿{
    "CodeGenerationMode": 5,
-   "ContextClassName": "Pets-Shop_DBContext",
+   "ContextClassName": "PetsShop_DBContext",
    "ContextNamespace": null,
    "FilterSchemas": false,
    "IncludeConnectionString": false,
@@ -16,6 +16,14 @@
    "Tables": [
       {
          "Name": "[dbo].[Categories]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Order_Item]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Orders]",
          "ObjectType": 0
       },
       {

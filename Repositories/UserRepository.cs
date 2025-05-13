@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Repositories
 {
-
     public class UserRepository : IUserRepository
     {
         PetsShop_DBContext dBContext;
@@ -33,8 +32,8 @@ namespace Repositories
         {
             try
             {
-                if (await dBContext.Users.AnyAsync(user => user.UserName == u.UserName && user.Password == u.Password) != null)
-                    throw new HttpStatusException(409, "User already exist");
+                //if (await dBContext.Users.AnyAsync(user => user.UserName == u.UserName && user.Password == u.Password) == null)
+                //    throw new HttpStatusException(409, "User already exist");
                 await dBContext.Users.AddAsync(u);
                 await dBContext.SaveChangesAsync();
             }
