@@ -21,7 +21,7 @@ namespace Repositories
         {
             try
             {
-                return await dBContext.Orders.FirstOrDefaultAsync(c => c.Id == ID);
+                return await dBContext.Orders.Include(i=>i.OrderItems).FirstOrDefaultAsync(c => c.Id == ID);
             }
             catch (Exception e)
             {
@@ -34,7 +34,7 @@ namespace Repositories
         {
             try
             {
-                return await dBContext.Orders.ToListAsync<Order>();
+                return await dBContext.Orders.Include(i => i.OrderItems).ToListAsync<Order>();
             }
             catch (Exception e)
             {
