@@ -22,7 +22,7 @@ namespace Repositories
         {
             try
             {
-                return await dBContext.Categories.FirstOrDefaultAsync(c => c.Id == ID);
+                return await dBContext.Categories.Include(i => i.Products).FirstOrDefaultAsync(c => c.Id == ID);
             }
             catch (Exception e)
             {
@@ -35,7 +35,7 @@ namespace Repositories
         {
             try
             {
-                return await dBContext.Categories.ToListAsync<Category>();
+                return await dBContext.Categories.Include(i => i.Products).ToListAsync<Category>();
             }
             catch (Exception e)
             {
