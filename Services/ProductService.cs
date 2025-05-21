@@ -8,7 +8,7 @@ using Entities;
 
 namespace Services
 {
-    class ProductService : IProductService
+    public class ProductService : IProductService
     {
         private readonly IProductRepositories _productRepositories;
 

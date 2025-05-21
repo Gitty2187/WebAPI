@@ -2,7 +2,7 @@
 
 namespace Services
 {
-    internal interface IProductService
+    public interface IProductService
     {
         Task<List<Product>> GetAll();
         Task<Product> getById(int id);

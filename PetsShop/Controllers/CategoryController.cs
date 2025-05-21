@@ -26,7 +26,7 @@ namespace PetsShop.Controllers
 
         // GET api/<CategoryController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> Get(int id)
+        public async Task<ActionResult<Category>> Get(int id)
         {
             return await _categoryService.getById(id);
         }

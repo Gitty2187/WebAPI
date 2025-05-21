@@ -39,7 +39,6 @@ async function update() {
             alert(message);
         }
         else {
-
             localStorage.setItem("UserName", UserName);
             localStorage.setItem("UserLastName", LastName)
             localStorage.setItem("UserFirstName", FirstName)

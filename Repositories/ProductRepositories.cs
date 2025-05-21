@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repositories
 {
-    class ProductRepositories : IProductRepositories
+    public class ProductRepositories : IProductRepositories
     {
         PetsShop_DBContext dBContext;
 

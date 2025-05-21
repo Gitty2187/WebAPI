@@ -8,7 +8,7 @@ using Repositories;
 
 namespace Services
 {
-    class CategoryService : ICategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository _categoryRepository;
 

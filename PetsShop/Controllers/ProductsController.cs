@@ -19,14 +19,14 @@ namespace PetsShop.Controllers
 
         // GET: api/<ProductsController>
         [HttpGet]
-        public async Task<List<User>> Get()
+        public async Task<List<Product>> Get()
         {
             return await _productService.GetAll();
         }
 
         // GET api/<ProductsController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> Get(int id)
+        public async Task<ActionResult<Product>> Get(int id)
         {
             return await _productService.getById(id);
         }

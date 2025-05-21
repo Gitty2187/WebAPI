@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repositories
 {
-    class CategoryRepository : ICategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
         PetsShop_DBContext dBContext;
 
@@ -18,6 +18,7 @@ namespace Repositories
         }
 
         public async Task<Category> getById(int ID)
+        
         {
             try
             {
