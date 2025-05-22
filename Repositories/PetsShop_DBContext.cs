@@ -13,6 +13,11 @@ public partial class PetsShop_DBContext : DbContext
     {
     }
 
+    public PetsShop_DBContext()
+    {
+        
+    }
+
     public virtual DbSet<Category> Categories { get; set; }
 
     public virtual DbSet<Order> Orders { get; set; }
