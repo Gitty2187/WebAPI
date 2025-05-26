@@ -26,6 +26,9 @@ public partial class Product
     [StringLength(50)]
     public string Description { get; set; }
 
+    [StringLength(50)]
+    public string ImageURL { get; set; }
+
     [ForeignKey("CategoryId")]
     [InverseProperty("Products")]
    

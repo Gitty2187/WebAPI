@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using DTOs;
 using Entities;
 using static DTOs.CategoryDTO;
 using static DTOs.OrderDTO;
@@ -14,9 +13,7 @@ namespace PetsShop
     {
         public AutoMapping()
         {
-            
             CreateMap<Category, CategoryDto>();
-             
             CreateMap<Order, OrderDto>();
             CreateMap<User, UserDto>();
             CreateMap<UserRegister, User>();

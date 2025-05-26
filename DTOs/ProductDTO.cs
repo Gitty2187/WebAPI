@@ -8,6 +8,6 @@ namespace DTOs
 {
     public class ProductDTO
     {
-        public record ProductDto(int Id, string Name, int? Price, int? CategoryId,string CategoryName);
+        public record ProductDto(int Id, string Name, int? Price, int? CategoryId,string CategoryName, string Description, string ImageURL);
     }
 }
