@@ -7,6 +7,7 @@ using AutoMapper;
 using DTOs;
 using Entities;
 using Repositories;
+using static DTOs.CategoryDTO;
 
 namespace Services
 {
@@ -21,10 +22,10 @@ namespace Services
             _mapper = mapper;
         }
 
-        public async Task<List<CategoryDTO>> GetAll()
+        public async Task<List<CategoryDto>> GetAll()
         {
             List<Category> categories = await _categoryRepository.GetAll();
-            List<CategoryDTO> categoryDTOs = _mapper.Map<List<Category>, List<CategoryDTO>>(categories);
+            List<CategoryDto> categoryDTOs = _mapper.Map<List<Category>, List<CategoryDto>>(categories);
             return categoryDTOs;
         }
     }

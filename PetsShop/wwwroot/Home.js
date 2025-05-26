@@ -15,13 +15,14 @@ function show() {
 async function login() {
     const userName = document.getElementById("loginUserName").value;
     const password = document.getElementById("loginPassword").value;
+    const userLogin = { UserName : userName, Password : password }
     try {
         const res = await fetch('api/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify([userName, password])
+            body: JSON.stringify(userLogin)
         });
 
 

@@ -12,8 +12,8 @@ namespace Entities
         public string Password { get; set; }
         public UserLogin(string userName, string password)
         {
-            userName = UserName;
-            password = Password;
+            UserName = userName;
+            Password = password;
         }
     }
 }

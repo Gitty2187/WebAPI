@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Services;
 using DTOs;
+using static DTOs.OrderDTO;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,12 +22,12 @@ namespace PetsShop.Controllers
 
         // POST api/<OrdersController>
         [HttpPost]
-        public async Task<ActionResult<OrderDTO>> Post([FromBody] OrderDTO order)
+        public async Task<ActionResult<OrderDto>> Post([FromBody] OrderDto order)
         {
             try
             {
                 await _orderService.Add(order);
-                return Ok();
+                return Ok(order);
             }
             catch
             {

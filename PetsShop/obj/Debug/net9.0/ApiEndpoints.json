@@ -9,53 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Entities.Category, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.CategoryController",
-    "Method": "Get",
-    "RelativePath": "api/Category/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Entities.Category",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.OrdersController",
-    "Method": "Get",
-    "RelativePath": "api/Orders",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Entities.Order, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DTOs.CategoryDTO\u002BCategoryDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -75,161 +29,18 @@
     "Parameters": [
       {
         "Name": "order",
-        "Type": "Entities.Order",
+        "Type": "DTOs.OrderDTO\u002BOrderDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Entities.Order",
+        "Type": "DTOs.OrderDTO\u002BOrderDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.OrdersController",
-    "Method": "Get",
-    "RelativePath": "api/Orders/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Entities.Order",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.PetsController",
-    "Method": "Get",
-    "RelativePath": "api/Pets",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.PetsController",
-    "Method": "Post",
-    "RelativePath": "api/Pets",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.PetsController",
-    "Method": "Get",
-    "RelativePath": "api/Pets/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.PetsController",
-    "Method": "Put",
-    "RelativePath": "api/Pets/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PetsShop.Controllers.PetsController",
-    "Method": "Delete",
-    "RelativePath": "api/Pets/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
@@ -244,7 +55,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Entities.Product, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DTOs.ProductDTO\u002BProductDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -270,7 +81,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Entities.Product",
+        "Type": "DTOs.ProductDTO\u002BProductDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -290,7 +101,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Entities.User, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DTOs.UserDTO\u002BUserDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -309,8 +120,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Entities.User",
+        "Name": "userRegister",
+        "Type": "DTOs.UserDTO\u002BUserRegisterDto",
         "IsRequired": true
       }
     ],
@@ -342,7 +153,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Entities.User",
+        "Type": "DTOs.UserDTO\u002BUserDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -361,13 +172,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Entities.User",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "id",
-        "Type": "",
+        "Name": "user",
+        "Type": "DTOs.UserDTO\u002BUserRegisterDto",
         "IsRequired": true
       }
     ],
@@ -408,8 +219,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "credentials",
-        "Type": "System.String[]",
+        "Name": "userLogin",
+        "Type": "DTOs.UserDTO\u002BUserLoginDto",
         "IsRequired": true
       }
     ],

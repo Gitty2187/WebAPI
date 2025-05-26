@@ -20,7 +20,7 @@ namespace Repositories
         {
             try
             {
-                return await dBContext.Users.FirstAsync(user => user.UserName == userLogin.UserName && user.Password == userLogin.Password);
+                return await dBContext.Users.Where(user => user.UserName == userLogin.UserName && user.Password == userLogin.Password).FirstOrDefaultAsync();
             }
             catch (Exception e)
             {
@@ -47,16 +47,11 @@ namespace Repositories
 
         public async Task<User> update(User userToUpdate, int id)
         {
-            try
-            {
+           
                 dBContext.Users.Update(userToUpdate);
                 await dBContext.SaveChangesAsync();
                 return userToUpdate;
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
+            
         }
 
         public async Task<User> getById(int ID)

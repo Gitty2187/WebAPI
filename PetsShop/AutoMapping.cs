@@ -1,6 +1,10 @@
 ﻿using AutoMapper;
 using DTOs;
 using Entities;
+using static DTOs.CategoryDTO;
+using static DTOs.OrderDTO;
+using static DTOs.OrderItemDTO;
+using static DTOs.ProductDTO;
 using static DTOs.UserDTO;
 
 
@@ -10,17 +14,19 @@ namespace PetsShop
     {
         public AutoMapping()
         {
-            CreateMap<Product, ProductDTO>();
-            CreateMap<Category, CategoryDTO>();
-            CreateMap<Order, OrderDTO>();
+            
+            CreateMap<Category, CategoryDto>();
+             
+            CreateMap<Order, OrderDto>();
             CreateMap<User, UserDto>();
             CreateMap<UserRegister, User>();
             CreateMap<UserRegisterDto, User>();
-            CreateMap<OrderItemDTO, OrderItem>();
-            CreateMap<Product, ProductDTO>()
+            CreateMap<OrderItemDto, OrderItem>();
+            CreateMap<UserLoginDto, UserLogin>();
+            CreateMap<Product, ProductDto>()
                     .ForMember("CategoryName",
                     opts => opts.MapFrom(src => src.Category.Name));
-            CreateMap<OrderDTO, Order>().ForMember(dest => dest.OrderItems,
+            CreateMap<OrderDto, Order>().ForMember(dest => dest.OrderItems,
                     opt => opt.MapFrom(src => src.Products));
         }
     }

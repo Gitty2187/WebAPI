@@ -1,10 +1,11 @@
 ﻿using DTOs;
+using static DTOs.ProductDTO;
 
 namespace Services
 {
     public interface IProductService
     {
-        Task<List<ProductDTO>> GetAll();
-        Task<ProductDTO> getById(int id);
+        Task<List<ProductDto>> GetAll();
+        Task<ProductDto> getById(int id);
     }
 }

@@ -8,6 +8,7 @@ using Entities;
 using DTOs;
 using AutoMapper;
 using static DTOs.CategoryDTO;
+using static DTOs.ProductDTO;
 
 namespace Services
 {
@@ -23,19 +24,19 @@ namespace Services
             _mapper = mapper;
         }
 
-        public async Task<List<ProductDTO>> GetAll()
+        public async Task<List<ProductDto>> GetAll()
         {
             List<Product> products = await _productRepositories.GetAll();
-            List<ProductDTO> productsDTOs = _mapper.Map<List<Product>, List<ProductDTO>>(products);
+            List<ProductDto> productsDTOs = _mapper.Map<List<Product>, List<ProductDto>>(products);
             return productsDTOs;
         }
 
-        public async Task<ProductDTO> getById(int id)
+        public async Task<ProductDto> getById(int id)
         {
             if (id == null)
                 throw new Exception("Must insert id");
             Product product = await _productRepositories.getById(id);
-            ProductDTO productDTO = _mapper.Map<Product, ProductDTO>(product);
+            ProductDto productDTO = _mapper.Map<Product, ProductDto>(product);
             return productDTO;
         }
     }

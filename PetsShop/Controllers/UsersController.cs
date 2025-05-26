@@ -46,9 +46,9 @@ namespace PetsShop.Controllers
                 var res = await _userService.login(userLogin);
                 return Ok(res);
             }
-            catch
+            catch(Exception e)
             {
-                return NotFound();
+                return NotFound(e);
             }
         }
 

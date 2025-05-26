@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Services;
 using DTOs;
+using static DTOs.ProductDTO;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -20,14 +21,14 @@ namespace PetsShop.Controllers
 
         // GET: api/<ProductsController>
         [HttpGet]
-        public async Task<List<ProductDTO>> Get()
+        public async Task<List<ProductDto>> Get()
         {
             return await _productService.GetAll();
         }
 
         // GET api/<ProductsController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductDTO>> Get(int id)
+        public async Task<ActionResult<ProductDto>> Get(int id)
         {
             return await _productService.getById(id);
         }

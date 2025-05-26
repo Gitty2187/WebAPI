@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTOs;
+using static DTOs.OrderDTO;
 
 namespace Services
 {
@@ -21,9 +22,9 @@ namespace Services
             _mapper = mapper;
         }
 
-        public async Task Add(OrderDTO order)
+        public async Task Add(OrderDto order)
         {
-            Order orderToAdd = _mapper.Map<OrderDTO, Order>(order);
+            Order orderToAdd = _mapper.Map<OrderDto, Order>(order);
             if (orderToAdd.UserId == null || orderToAdd.Sum == null)
                 throw new Exception("Must insert UserId & Sum");
             if (orderToAdd.Date == null)

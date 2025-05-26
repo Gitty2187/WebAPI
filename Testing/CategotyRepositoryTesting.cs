@@ -15,7 +15,7 @@ namespace Testing
         public async Task GetAll_ReturnsAllCategoriesWithProducts()
         {
             // Arrange
-            var cat1 = new CategoryDto
+            var cat1 = new Category
             {
                 Id = 1,
                 Name = "Toys",
@@ -24,7 +24,7 @@ namespace Testing
                     new Product { Id = 1, Name = "Bone" }
                 }
             };
-            var cat2 = new CategoryDto
+            var cat2 = new Category
             {
                 Id = 2,
                 Name = "Food",
@@ -33,7 +33,7 @@ namespace Testing
                     new Product { Id = 2, Name = "Dog food" }
                 }
             };
-            var categories = new List<CategoryDto> { cat1, cat2 };
+            var categories = new List<Category> { cat1, cat2 };
 
             var mockContext = new Mock<PetsShop_DBContext>();
             mockContext.Setup(x => x.Categories).ReturnsDbSet(categories);

@@ -46,7 +46,7 @@ namespace Services
             if (user.UserName == null || user.Password == null)
                 throw new Exception("Must insert userName & password");
             if (checkPassword(user.Password) <= 2)
-                return null;
+                throw new Exception("Must insert more hard password");
             User userToUpdate = _mapper.Map<UserRegisterDto, User>(user);
             userToUpdate.Id = id;
             User UpdateUser = await _userRepository.update(userToUpdate, id);
