@@ -17,19 +17,6 @@ namespace Repositories
             dBContext = context;
         }
 
-        public async Task<Category> getById(int ID)
-        
-        {
-            try
-            {
-                return await dBContext.Categories.Include(i => i.Products).FirstOrDefaultAsync(c => c.Id == ID);
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-
-        }
 
         public async Task<List<Category>> GetAll()
         {

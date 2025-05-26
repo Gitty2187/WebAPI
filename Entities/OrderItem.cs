@@ -26,11 +26,11 @@ public partial class OrderItem
 
     [ForeignKey("OrderId")]
     [InverseProperty("OrderItems")]
-    [JsonIgnore]
+    
     public virtual Order Order { get; set; }
 
     [ForeignKey("ProductId")]
     [InverseProperty("OrderItems")]
-    [JsonIgnore]
+   
     public virtual Product Product { get; set; }
 }

@@ -46,3 +46,8 @@ M:\WebAPI\Repositories\obj\Debug\net9.0\Repositories.dll
 M:\WebAPI\Repositories\obj\Debug\net9.0\refint\Repositories.dll
 M:\WebAPI\Repositories\obj\Debug\net9.0\Repositories.pdb
 M:\WebAPI\Repositories\obj\Debug\net9.0\ref\Repositories.dll
+M:\WebAPI\Repositories\bin\Debug\net9.0\DTOs.deps.json
+M:\WebAPI\Repositories\bin\Debug\net9.0\DTOs.runtimeconfig.json
+M:\WebAPI\Repositories\bin\Debug\net9.0\DTOs.exe
+M:\WebAPI\Repositories\bin\Debug\net9.0\DTOs.dll
+M:\WebAPI\Repositories\bin\Debug\net9.0\DTOs.pdb

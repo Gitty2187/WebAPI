@@ -1,6 +1,7 @@
 ﻿using Entities;
 using Microsoft.AspNetCore.Mvc;
 using Services;
+using DTOs;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,23 +17,11 @@ namespace PetsShop.Controllers
             _orderService = orderService;
         }
 
-        // GET: api/<OrdersController>
-        [HttpGet]
-        public async Task<List<Order>> Get()
-        {
-            return await _orderService.GetAll();
-        }
-
-        // GET api/<OrdersController>/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Order>> Get(int id)
-        {
-            return await _orderService.getById(id);
-        }
+       
 
         // POST api/<OrdersController>
         [HttpPost]
-        public async Task<ActionResult<Order>> Post([FromBody] Order order)
+        public async Task<ActionResult<OrderDTO>> Post([FromBody] OrderDTO order)
         {
             try
             {
@@ -45,16 +34,6 @@ namespace PetsShop.Controllers
             }
         }
 
-        // PUT api/<OrdersController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<OrdersController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+     
     }
 }

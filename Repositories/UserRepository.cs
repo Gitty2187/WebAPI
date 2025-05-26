@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿using AutoMapper;
+using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
 using System.Text.Json;
@@ -15,11 +16,11 @@ namespace Repositories
             dBContext = context;
         }
 
-        public async Task<User> login(String userName, String password)
+        public async Task<User> login(UserLogin userLogin)
         {
             try
             {
-                return await dBContext.Users.FirstAsync(user => user.UserName == userName && user.Password == password);
+                return await dBContext.Users.FirstAsync(user => user.UserName == userLogin.UserName && user.Password == userLogin.Password);
             }
             catch (Exception e)
             {
@@ -28,13 +29,14 @@ namespace Repositories
 
         }
 
-        public async Task register(User u)
+        public async Task register(User user)
         {
+
             try
             {
                 //if (await dBContext.Users.AnyAsync(user => user.UserName == u.UserName && user.Password == u.Password) == null)
                 //    throw new HttpStatusException(409, "User already exist");
-                await dBContext.Users.AddAsync(u);
+                await dBContext.Users.AddAsync(user);
                 await dBContext.SaveChangesAsync();
             }
             catch (Exception e)
@@ -43,12 +45,13 @@ namespace Repositories
             }
         }
 
-        public async Task update(User userToUpdate)
+        public async Task<User> update(User userToUpdate, int id)
         {
             try
             {
                 dBContext.Users.Update(userToUpdate);
                 await dBContext.SaveChangesAsync();
+                return userToUpdate;
             }
             catch (Exception e)
             {

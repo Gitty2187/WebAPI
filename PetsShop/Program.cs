@@ -17,6 +17,8 @@ builder.Services.AddDbContext<PetsShop_DBContext>(option =>
 option.UseSqlServer("Data Source = SRV2\\PUPILS; Initial Catalog = ADO_Gitty; Integrated Security = True;Trust Server Certificate=True"));
 // Add services to the container.
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddControllers();
 
 builder.Services.AddControllers();

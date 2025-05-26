@@ -1,8 +1,10 @@
-﻿using Entities;
+﻿using DTOs;
+using Entities;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 using System.Text.Json;
 using System.Threading.Tasks;
+using static DTOs.UserDTO;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,7 +23,7 @@ namespace PetsShop.Controllers
 
         // GET: api/<UsersController>
         [HttpGet]
-        public async Task<List<User>> Get()
+        public async Task<List<UserDto>> Get()
         {
             return await _userService.GetUsers();
         }
@@ -30,18 +32,18 @@ namespace PetsShop.Controllers
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> Get(int id)
+        public async Task<ActionResult<UserDto>> Get(int id)
         {
             return await _userService.getById(id);
         }
 
         //POST api/<UsersController>
         [HttpPost("login")]
-        public async Task<ActionResult<User>> Post([FromBody] string[] credentials)
+        public async Task<ActionResult<User>> Post([FromBody] UserLoginDto userLogin)
         {
             try
             {
-                var res = await _userService.login((String)credentials[0], (String)credentials[1]);
+                var res = await _userService.login(userLogin);
                 return Ok(res);
             }
             catch
@@ -54,14 +56,14 @@ namespace PetsShop.Controllers
         //POST api/<UsersController>
         //register
         [HttpPost]
-        public async Task<ActionResult<User>> Post([FromBody] User user)
+        public async Task<ActionResult<User>> Post([FromBody] UserRegisterDto userRegister)
         {
-            int resPass = _userService.checkPassword(user.Password);
+            int resPass = _userService.checkPassword(userRegister.Password);
             if (resPass < 2)
                 return BadRequest("You must enter a stronger password");
             try
             {
-                await _userService.register(user);
+                await _userService.register(userRegister);
                 return Ok();
             }
             catch
@@ -92,7 +94,7 @@ namespace PetsShop.Controllers
 
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
-        public async Task<ActionResult<User>> Put([FromBody] User user)
+        public async Task<ActionResult<User>> Put(int id,[FromBody] UserRegisterDto user)
         {
             if (user.Password != null)
             {
@@ -102,19 +104,13 @@ namespace PetsShop.Controllers
             }
             try
             {
-                _userService.update(user);
+                _userService.update(user, id);
                 return Ok(user);
             }
             catch
             {
                 return BadRequest();
             }
-        }
-        
-        // DELETE api/<UsersController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

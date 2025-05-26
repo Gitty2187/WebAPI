@@ -28,6 +28,5 @@ public partial class Order
 
     [ForeignKey("UserId")]
     [InverseProperty("Orders")]
-    [JsonIgnore]
     public virtual User User { get; set; }
 }

@@ -2,7 +2,11 @@
 using Entities;
 using Repositories;
 using System.Xml.Linq;
-
+using System.Globalization;
+using Microsoft.EntityFrameworkCore.Metadata;
+using AutoMapper;
+using DTOs;
+using static DTOs.UserDTO;
 
 namespace Services
 {
@@ -10,34 +14,45 @@ namespace Services
 
     {
         private readonly IUserRepository _userRepository;
+        private readonly IMapper _mapper;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
-        public async Task<User> login(string UserName, string password)
+        public async Task<UserDto> login(UserLoginDto userLogin)
         {
-            if (UserName == null || password == null)
+            if (userLogin.UserName == null || userLogin.Password == null)
                 return null;
-            return await _userRepository.login(UserName, password);
+            UserLogin userLogin1 = _mapper.Map<UserLoginDto, UserLogin>(userLogin);
+            User user = await _userRepository.login(userLogin1);
+            return _mapper.Map<User, UserDto>(user);
         }
 
-        public async Task register(User user)
+        public async Task register(UserRegisterDto userRegister)
         {
-            if (checkPassword(user.Password) < 2)
+            if (userRegister.UserName == null || userRegister.Password == null)
+                throw new Exception("Must insert userName & password");
+            if (checkPassword(userRegister.Password) < 2)
                 throw new Exception("Must insert more hard password");
-            if (user.UserName == null || user.Password == null)
-                throw new Exception("Must insert userName & password");
-            await _userRepository.register(user);
+            User userToRegister = _mapper.Map<UserRegisterDto, User>(userRegister);
+            await _userRepository.register(userToRegister);
         }
 
-        public async Task update(User user)
+        public async Task<UserDto> update(UserRegisterDto user, int id)
         {
             if (user.UserName == null || user.Password == null)
                 throw new Exception("Must insert userName & password");
-            await _userRepository.update(user);
-            return;
+            if (checkPassword(user.Password) <= 2)
+                return null;
+            User userToUpdate = _mapper.Map<UserRegisterDto, User>(user);
+            userToUpdate.Id = id;
+            User UpdateUser = await _userRepository.update(userToUpdate, id);
+            if (UpdateUser != null)
+                return _mapper.Map<User, UserDto>(UpdateUser);
+            return null;
         }
 
         public int checkPassword(string password)
@@ -51,16 +66,18 @@ namespace Services
             return -1;
         }
 
-        public async Task<List<User>> GetUsers()
+        public async Task<List<UserDto>> GetUsers()
         {
-            return await _userRepository.GetUsers();
+            List<User> users = await _userRepository.GetUsers();
+            return _mapper.Map<List<User>, List<UserDto>>(users);
         }
 
-        public async Task<User> getById(int id)
+        public async Task<UserDto> getById(int id)
         {
             if (id == null)
                 throw new Exception("Must insert id");
-            return await _userRepository.getById(id);
+            User user = await _userRepository.getById(id);
+            return _mapper.Map<User, UserDto>(user);
         }
     }
 }
