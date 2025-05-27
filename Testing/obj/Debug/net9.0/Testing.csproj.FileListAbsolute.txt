@@ -159,3 +159,9 @@ M:\WebAPI\Testing\obj\Debug\net9.0\refint\Testing.dll
 M:\WebAPI\Testing\obj\Debug\net9.0\Testing.pdb
 M:\WebAPI\Testing\obj\Debug\net9.0\Testing.genruntimeconfig.cache
 M:\WebAPI\Testing\obj\Debug\net9.0\ref\Testing.dll
+M:\WebAPI\Testing\bin\Debug\net9.0\DTOs.deps.json
+M:\WebAPI\Testing\bin\Debug\net9.0\DTOs.runtimeconfig.json
+M:\WebAPI\Testing\bin\Debug\net9.0\DTOs.exe
+M:\WebAPI\Testing\bin\Debug\net9.0\AutoMapper.dll
+M:\WebAPI\Testing\bin\Debug\net9.0\DTOs.dll
+M:\WebAPI\Testing\bin\Debug\net9.0\DTOs.pdb
