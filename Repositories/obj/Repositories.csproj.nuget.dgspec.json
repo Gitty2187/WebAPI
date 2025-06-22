@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "M:\\WebAPI\\Repositories\\Repositories.csproj": {}
+    "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Repositories\\Repositories.csproj": {}
   },
   "projects": {
-    "M:\\WebAPI\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\WebAPI\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "M:\\WebAPI\\DTOs\\DTOs.csproj",
-        "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
-        "outputPath": "M:\\WebAPI\\DTOs\\obj\\",
+        "projectPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\DTOs\\DTOs.csproj",
+        "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "M:\\WebAPI\\Entities\\Entities.csproj": {
-                "projectPath": "M:\\WebAPI\\Entities\\Entities.csproj"
+              "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\Entities.csproj"
               }
             }
           }
@@ -70,24 +70,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "M:\\WebAPI\\Entities\\Entities.csproj": {
+    "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\WebAPI\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "M:\\WebAPI\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
-        "outputPath": "M:\\WebAPI\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -146,24 +146,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "M:\\WebAPI\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\WebAPI\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "M:\\WebAPI\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\215584376\\.nuget\\packages\\",
-        "outputPath": "M:\\WebAPI\\Repositories\\obj\\",
+        "projectPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\215584376\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -179,11 +179,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "M:\\WebAPI\\DTOs\\DTOs.csproj": {
-                "projectPath": "M:\\WebAPI\\DTOs\\DTOs.csproj"
+              "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\DTOs\\DTOs.csproj"
               },
-              "M:\\WebAPI\\Entities\\Entities.csproj": {
-                "projectPath": "M:\\WebAPI\\Entities\\Entities.csproj"
+              "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\משתמש\\Desktop\\מסלול\\WebAPI\\PetsShop\\Entities\\Entities.csproj"
               }
             }
           }
@@ -229,7 +229,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
