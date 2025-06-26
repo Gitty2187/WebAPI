@@ -10,14 +10,14 @@ namespace Repositories
 {
     public class OrderRepository : IOrderRepository
     {
-        PetsShop_DBContext dBContext;
+        PetsShop_DBContext dBContext;//_dBContext
 
         public OrderRepository(PetsShop_DBContext context)
         {
             dBContext = context;
         }
 
-        public async Task<Order> getById(int ID)
+        public async Task<Order> getById(int ID)//GetById
         {
             try
             {
@@ -48,6 +48,7 @@ namespace Repositories
             {
                 await dBContext.Orders.AddAsync(order);
                 await dBContext.SaveChangesAsync();
+                //return order;
             }
             catch (Exception e)
             {

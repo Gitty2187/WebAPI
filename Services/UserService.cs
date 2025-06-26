@@ -22,16 +22,16 @@ namespace Services
             _mapper = mapper;
         }
 
-        public async Task<UserDto> login(UserLoginDto userLogin)
+        public async Task<UserDto> login(UserLoginDto userLogin)//Login
         {
             if (userLogin.UserName == null || userLogin.Password == null)
                 return null;
-            UserLogin userLogin1 = _mapper.Map<UserLoginDto, UserLogin>(userLogin);
+            UserLogin userLogin1 = _mapper.Map<UserLoginDto, UserLogin>(userLogin);//clean code - Writing names with meaning
             User user = await _userRepository.login(userLogin1);
             return _mapper.Map<User, UserDto>(user);
         }
 
-        public async Task register(UserRegisterDto userRegister)
+        public async Task register(UserRegisterDto userRegister)//Register
         {
             if (userRegister.UserName == null || userRegister.Password == null)
                 throw new Exception("Must insert userName & password");
@@ -41,7 +41,7 @@ namespace Services
             await _userRepository.register(userToRegister);
         }
 
-        public async Task<UserDto> update(UserRegisterDto user, int id)
+        public async Task<UserDto> update(UserRegisterDto user, int id)//Update
         {
             if (user.UserName == null || user.Password == null)
                 throw new Exception("Must insert userName & password");
@@ -49,13 +49,15 @@ namespace Services
                 throw new Exception("Must insert more hard password");
             User userToUpdate = _mapper.Map<UserRegisterDto, User>(user);
             userToUpdate.Id = id;
-            User UpdateUser = await _userRepository.update(userToUpdate, id);
-            if (UpdateUser != null)
-                return _mapper.Map<User, UserDto>(UpdateUser);
-            return null;
+            User UpdateUser = await _userRepository.update(userToUpdate, id);//clean code - Writing variables with a lowercase letter
+            // if (UpdateUser != null)
+            //     return _mapper.Map<User, UserDto>(UpdateUser);
+            // return null;
+            return _mapper.Map<User, UserDto>(UpdateUser);//if UpdateUser is null, it will return null
+
         }
 
-        public int checkPassword(string password)
+        public int checkPassword(string password)//CheckPassword
         {
             if (password != null)
             {
@@ -72,7 +74,7 @@ namespace Services
             return _mapper.Map<List<User>, List<UserDto>>(users);
         }
 
-        public async Task<UserDto> getById(int id)
+        public async Task<UserDto> getById(int id)//GetById
         {
             if (id == null)
                 throw new Exception("Must insert id");

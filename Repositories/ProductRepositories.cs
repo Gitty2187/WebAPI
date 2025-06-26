@@ -10,7 +10,7 @@ namespace Repositories
 {
     public class ProductRepositories : IProductRepositories
     {
-        PetsShop_DBContext dBContext;
+        PetsShop_DBContext dBContext;//_dBContext
 
         public ProductRepositories(PetsShop_DBContext context)
         {
@@ -29,7 +29,7 @@ namespace Repositories
             }
         }
 
-        public async Task<Product> getById(int ID)
+        public async Task<Product> getById(int ID)//GetById
         {
             try
             {
