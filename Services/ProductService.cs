@@ -27,16 +27,16 @@ namespace Services
         public async Task<List<ProductDto>> GetAll()
         {
             List<Product> products = await _productRepositories.GetAll();
-            List<ProductDto> productsDTOs = _mapper.Map<List<Product>, List<ProductDto>>(products);
-            return productsDTOs;
+            return _mapper.Map<List<Product>, List<ProductDto>>(products);
+           
         }
 
-        public async Task<ProductDto> getById(int id)
+        public async Task<ProductDto> getById(int id)//GetById
         {
             if (id == null)
                 throw new Exception("Must insert id");
             Product product = await _productRepositories.getById(id);
-            ProductDto productDTO = _mapper.Map<Product, ProductDto>(product);
+            ProductDto productDTO = _mapper.Map<Product, ProductDto>(product);//return ....
             return productDTO;
         }
     }

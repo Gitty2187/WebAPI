@@ -9,14 +9,14 @@ namespace Repositories
 {
     public class UserRepository : IUserRepository
     {
-        PetsShop_DBContext dBContext;
+        PetsShop_DBContext dBContext;//_dBContext
 
         public UserRepository(PetsShop_DBContext context)
         {
             dBContext = context;
         }
 
-        public async Task<User> login(UserLogin userLogin)
+        public async Task<User> login(UserLogin userLogin)//Login
         {
             try
             {
@@ -29,15 +29,17 @@ namespace Repositories
 
         }
 
-        public async Task register(User user)
+        public async Task register(User user)//Register
         {
 
             try
             {
+                //delete unsed code
                 //if (await dBContext.Users.AnyAsync(user => user.UserName == u.UserName && user.Password == u.Password) == null)
                 //    throw new HttpStatusException(409, "User already exist");
                 await dBContext.Users.AddAsync(user);
                 await dBContext.SaveChangesAsync();
+                //return user;
             }
             catch (Exception e)
             {
@@ -45,7 +47,7 @@ namespace Repositories
             }
         }
 
-        public async Task<User> update(User userToUpdate, int id)
+        public async Task<User> update(User userToUpdate, int id)//Update
         {
            
                 dBContext.Users.Update(userToUpdate);
@@ -54,7 +56,7 @@ namespace Repositories
             
         }
 
-        public async Task<User> getById(int ID)
+        public async Task<User> getById(int ID)//GetById
         {
             try
             {

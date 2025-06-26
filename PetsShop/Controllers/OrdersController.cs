@@ -4,7 +4,7 @@ using Services;
 using DTOs;
 using static DTOs.OrderDTO;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860//
 
 namespace PetsShop.Controllers
 {
@@ -18,9 +18,9 @@ namespace PetsShop.Controllers
             _orderService = orderService;
         }
 
-       
+               //clean code writing meaningful function names
 
-        // POST api/<OrdersController>
+        // POST api/<OrdersController>//
         [HttpPost]
         public async Task<ActionResult<OrderDto>> Post([FromBody] OrderDto order)
         {

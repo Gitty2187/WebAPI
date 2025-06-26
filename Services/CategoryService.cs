@@ -25,8 +25,7 @@ namespace Services
         public async Task<List<CategoryDto>> GetAll()
         {
             List<Category> categories = await _categoryRepository.GetAll();
-            List<CategoryDto> categoryDTOs = _mapper.Map<List<Category>, List<CategoryDto>>(categories);
-            return categoryDTOs;
+            return _mapper.Map<List<Category>, List<CategoryDto>>(categories);
         }
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Services;
 using Repositories;
-
+//delete comments
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();

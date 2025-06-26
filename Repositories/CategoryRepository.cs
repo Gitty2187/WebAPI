@@ -10,7 +10,7 @@ namespace Repositories
 {
     public class CategoryRepository : ICategoryRepository
     {
-        PetsShop_DBContext dBContext;
+        PetsShop_DBContext dBContext;//_dBContext
 
         public CategoryRepository(PetsShop_DBContext context)
         {

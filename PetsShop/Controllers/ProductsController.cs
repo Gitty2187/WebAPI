@@ -4,7 +4,7 @@ using Services;
 using DTOs;
 using static DTOs.ProductDTO;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860//
 
 namespace PetsShop.Controllers
 {
@@ -12,6 +12,7 @@ namespace PetsShop.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+        //clean code writing meaningful function names
 
         private readonly IProductService _productService;
         public ProductsController(IProductService productService)
@@ -19,14 +20,14 @@ namespace PetsShop.Controllers
             _productService = productService;
         }
 
-        // GET: api/<ProductsController>
+        // GET: api/<ProductsController>//
         [HttpGet]
         public async Task<List<ProductDto>> Get()
         {
             return await _productService.GetAll();
         }
 
-        // GET api/<ProductsController>/5
+        // GET api/<ProductsController>/5//
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductDto>> Get(int id)
         {

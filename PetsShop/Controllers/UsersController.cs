@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using static DTOs.UserDTO;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860//
 
 namespace PetsShop.Controllers
 {
@@ -21,7 +21,7 @@ namespace PetsShop.Controllers
         }
 
 
-        // GET: api/<UsersController>
+        // GET: api/<UsersController>//
         [HttpGet]
         public async Task<List<UserDto>> Get()
         {
@@ -30,14 +30,14 @@ namespace PetsShop.Controllers
 
 
 
-        // GET api/<UsersController>/5
+        // GET api/<UsersController>/5//
         [HttpGet("{id}")]
         public async Task<ActionResult<UserDto>> Get(int id)
         {
             return await _userService.getById(id);
         }
 
-        //POST api/<UsersController>
+        //POST api/<UsersController>//
         [HttpPost("login")]
         public async Task<ActionResult<User>> Post([FromBody] UserLoginDto userLogin)
         {
@@ -53,8 +53,8 @@ namespace PetsShop.Controllers
         }
 
 
-        //POST api/<UsersController>
-        //register
+        //POST api/<UsersController>//
+        //register//
         [HttpPost]
         public async Task<ActionResult<User>> Post([FromBody] UserRegisterDto userRegister)
         {
@@ -72,7 +72,7 @@ namespace PetsShop.Controllers
             }
         }
 
-        //POST api/<UsersController>
+        //POST api/<UsersController>//
         [HttpPost("checkPassword")]
         public IActionResult Post([FromBody] string password)
         {
